@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import logo from '../logo.png';
 class Navbar extends React.Component{
     constructor(){
         super();
@@ -10,7 +11,7 @@ class Navbar extends React.Component{
             <>
                 <nav className="navbar navbar-expand-lg navbar-dark main-bg sticky-top">
                     <div className="container">
-                        <a className="navbar-brand" href="#"><img src="logo.png"/></a>
+                        <a className="navbar-brand" href="#"><img src={logo} alt="Logo" /></a>
                         <button
                             className="navbar-toggler"
                             type="button"
